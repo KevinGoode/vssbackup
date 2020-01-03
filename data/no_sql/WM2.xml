@@ -1,0 +1,16 @@
+<WRITER_METADATA xmlns="x-schema:#VssWriterMetadataInfo" version="1.2">
+	<IDENTIFICATION writerId="0bada1de-01a9-4625-8278-69e735f39dd2" instanceId="f0086dda-9efc-47c5-8eb6-a944c3d09381" friendlyName="Performance Counters Writer" usage="BOOTABLE_SYSTEM_STATE" dataSource="OTHER" majorVersion="0" minorVersion="0"/>
+	<RESTORE_METHOD method="REPLACE_AT_REBOOT_IF_CANNOT_REPLACE" writerRestore="never" rebootRequired="no"/>
+	<BACKUP_LOCATIONS>
+		<FILE_GROUP componentName="PerformanceCounters" caption="Performance Counters" restoreMetadata="no" notifyOnBackupComplete="no" selectable="yes" selectableForRestore="no" componentFlags="0">
+			<FILE_LIST path="%SystemRoot%\System32" filespec="Perfc???.dat" recursive="no" filespecBackupType="3855"/>
+			<FILE_LIST path="%SystemRoot%\System32" filespec="Perfd???.dat" recursive="no" filespecBackupType="3855"/>
+			<FILE_LIST path="%SystemRoot%\System32" filespec="Perfh???.dat" recursive="no" filespecBackupType="3855"/>
+			<FILE_LIST path="%SystemRoot%\System32" filespec="Perfi???.dat" recursive="no" filespecBackupType="3855"/>
+			<FILE_LIST path="%SystemRoot%\System32" filespec="Prfc????.dat" recursive="no" filespecBackupType="3855"/>
+			<FILE_LIST path="%SystemRoot%\System32" filespec="Prfd????.dat" recursive="no" filespecBackupType="3855"/>
+			<FILE_LIST path="%SystemRoot%\System32" filespec="Prfh????.dat" recursive="no" filespecBackupType="3855"/>
+			<FILE_LIST path="%SystemRoot%\System32" filespec="Prfi????.dat" recursive="no" filespecBackupType="3855"/>
+		</FILE_GROUP>
+	</BACKUP_LOCATIONS>
+</WRITER_METADATA>

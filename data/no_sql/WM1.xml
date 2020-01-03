@@ -1,0 +1,9 @@
+<WRITER_METADATA xmlns="x-schema:#VssWriterMetadataInfo" version="1.2">
+	<IDENTIFICATION writerId="75DFB225-E2E4-4d39-9AC9-FFAFF65DDF06" instanceId="088E7A7D-09A8-4cc6-A609-AD90E75DDC93" friendlyName="VSS Metadata Store Writer" usage="BOOTABLE_SYSTEM_STATE" dataSource="OTHER" majorVersion="0" minorVersion="0"/>
+	<RESTORE_METHOD method="REPLACE_AT_REBOOT_IF_CANNOT_REPLACE" writerRestore="never" rebootRequired="no"/>
+	<BACKUP_LOCATIONS>
+		<FILE_GROUP componentName="WriterMetadataStore" caption="VSS Express Writer Metadata Store" restoreMetadata="no" notifyOnBackupComplete="no" selectable="yes" selectableForRestore="no" componentFlags="0">
+			<FILE_LIST path="%SystemRoot%\Vss\Writers" filespec="*.xml" recursive="yes" filespecBackupType="3855"/>
+		</FILE_GROUP>
+	</BACKUP_LOCATIONS>
+</WRITER_METADATA>

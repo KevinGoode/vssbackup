@@ -1,0 +1,11 @@
+#DiskShadow script file
+#eg See https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc772172(v=ws.11)?redirectedfrom=MSDN
+set context persistent
+set verbose on
+begin backup
+add volume F: alias DataVolumeShadow
+
+create
+expose %DataVolumeShadow% q:
+end backup
+#End of script

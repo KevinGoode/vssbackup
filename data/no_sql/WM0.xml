@@ -1,0 +1,10 @@
+<WRITER_METADATA xmlns="x-schema:#VssWriterMetadataInfo" version="1.2">
+	<IDENTIFICATION writerId="D61D61C8-D73A-4EEE-8CDD-F6F9786B7124" instanceId="1BDDD48E-5052-49DB-9B07-B96F96727E6B" friendlyName="Task Scheduler Writer" usage="BOOTABLE_SYSTEM_STATE" dataSource="OTHER" majorVersion="0" minorVersion="0"/>
+	<RESTORE_METHOD method="REPLACE_AT_REBOOT_IF_CANNOT_REPLACE" writerRestore="never" rebootRequired="no"/>
+	<BACKUP_LOCATIONS>
+		<FILE_GROUP componentName="TasksStore" caption="Tasks Store" restoreMetadata="no" notifyOnBackupComplete="no" selectable="no" selectableForRestore="no" componentFlags="0">
+			<FILE_LIST path="%WinDir%\System32\Tasks" filespec="*" recursive="yes" filespecBackupType="3855"/>
+			<FILE_LIST path="%WinDir%\Tasks" filespec="*" recursive="yes" filespecBackupType="3855"/>
+		</FILE_GROUP>
+	</BACKUP_LOCATIONS>
+</WRITER_METADATA>
